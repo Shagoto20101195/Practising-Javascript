@@ -17,6 +17,13 @@
     transition: 0.5s;
 } */
 
+img
+{
+    width: 250px;
+    height: 250px;
+}
+
+
 .about
 {
     font-size: 20px;
