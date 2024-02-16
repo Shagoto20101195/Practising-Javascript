@@ -35,11 +35,17 @@ try {
 	fetch(url)
     .then((res) => res.json())
     .then((data) => {
-        alert(data.joke);
+        //alert(data.joke);
+        document.getElementById("display_joke").innerHTML = data.joke;
     });
 } catch (error) {
 	alert(error);
 }
+}
+
+function hideQuote()
+{
+    document.getElementById("display_joke").innerHTML = "Hover over to show random jokes";
 }
 
 function showCoffee()
@@ -51,24 +57,6 @@ function showCoffee()
         .then((res) => res.json())
         .then((data) => {
             document.getElementById("pic").src = data.file;
-        });
-    }
-    catch(error)
-    {
-        alert(error);
-    }
-}
-
-function showBurger()
-{
-    const url = "https://foodish-api.com/images/burger";
-
-    try
-    {
-        fetch(url)
-        .then((res) => res.json())
-        .then((data) => {
-            document.getElementById("pic").src = data.image;
         });
     }
     catch(error)

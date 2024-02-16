@@ -32,11 +32,13 @@
         </form> -->
         <a href="Javascript:void(0)" onclick="showQuote();">Click to show joke</a>
 
-        <form action="Javascript:void(0)" method="PUT" onsubmit="showNew('coffee', 'burger');">
+        <!-- <form action="Javascript:void(0)" method="PUT" onsubmit="showNew('coffee', 'burger');">
             <p>Coffee<input type="radio" name="coffee" id="coffee"></p>
             <p>Burger<input type="radio" name="burger" id="burger"></p>
             <input type="submit" value="Submit">
-        </form>
+        </form> -->
+
+        <p id="display_joke" onmouseover="showQuote();" onmouseleave="hideQuote();">Hover over to show random jokes</p>
     </main>
     <footer>
 
